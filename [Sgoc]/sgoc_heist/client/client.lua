@@ -163,6 +163,10 @@ end)
 Citizen.CreateThread(function()
   while true do
     if close == true then
+        interiorid = GetInteriorAtCoords(883.4142, -2282.372, 31.44168)
+        RemoveIpl(interiorid, "np_prolog_broken")
+        DeactivateInteriorEntitySet(interiorid, "np_prolog_broken")
+        ActivateInteriorEntitySet(interiorid, "np_prolog_clean")
         BobDoors1 = GetClosestObjectOfType(883.48, -2258.53, 30.56, 1.5, 'apa_v_ilev_ss_door8', false, false, false) 
         BobDoors2 = GetClosestObjectOfType(880.89, -2258.30, 30.56, 1.5, 'apa_v_ilev_ss_door7', false, false, false) 
         BobDoors3 = GetClosestObjectOfType(881.61, -2264.66, 30.61, 1.5, 'v_ilev_cd_door2', false, false, false) 
