@@ -54,3 +54,4 @@ Fix drzwi
 		label = 'prototyp magazynku',
 	},
   ```
+.
